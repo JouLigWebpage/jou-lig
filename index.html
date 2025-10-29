@@ -5,7 +5,6 @@
   <title data-key="pageTitle">Jou Lig van Hoop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    /* ----- bestaande style (behou) ----- */
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.6;color:#333;background:linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);min-height:100vh}
     .container{max-width:800px;margin:0 auto;padding:20px}
@@ -14,11 +13,9 @@
     .subtitle{color:#7f8c8d;font-size:1.15em}
     .lang-btn{position:absolute;top:15px;right:15px;background:#3498db;color:#fff;border:none;padding:8px 14px;border-radius:4px;cursor:pointer;font-size:.9rem}
     .lang-btn:hover{background:#2980b9}
-    /* ----- brug-knoppies ----- */
-    .bridge-buttons{text-align:center;margin:20px 0 30px}
-    .bridge-buttons .cta-button{margin:8px;display:inline-block;background:#3498db;color:#fff;padding:12px 25px;text-decoration:none;border-radius:25px;transition:background .3s;font-size:1rem}
+    .bridge-buttons{text-align:center;margin:20px 0 10px}
+    .bridge-buttons .cta-button{margin:8px;display:inline-block;background:#3498db;color:#fff;padding:12px 25px;text-decoration:none;border-radius:25px;font-size:1rem;transition:background .3s}
     .bridge-buttons .cta-button:hover{background:#2980b9}
-    /* ----- res van style (soos vroeër) ----- */
     .section{background:rgba(255,255,255,.95);padding:30px;margin-bottom:20px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
     h2{color:#3498db;margin-bottom:15px;font-size:1.8em}
     .emergency-box{background:linear-gradient(135deg,#ff6b6b,#ee5a24);color:#fff;padding:25px;border-radius:10px;text-align:center;margin:20px 0}
@@ -26,6 +23,10 @@
     .help-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px}
     .help-card{background:#f8f9fa;padding:20px;border-radius:8px;border-left:4px solid #3498db;transition:transform .3s}
     .help-card:hover{transform:translateY(-5px)}
+    ul.check,ul.cross{list-style:none;padding-left:0}
+    ul.check li,ul.cross li{margin:10px 0;padding-left:28px;position:relative}
+    ul.check li::before{content:'✔';color:#27ae60;position:absolute;left:0}
+    ul.cross li::before{content:'✘';color:#e74c3c;position:absolute;left:0}
     .tips-list{list-style:none;padding-left:0}
     .tips-list li{background:#ecf0f1;margin:10px 0;padding:15px;border-radius:5px;border-left:3px solid #3498db}
     .quote{font-style:italic;text-align:center;font-size:1.2em;color:#7f8c8d;margin:20px 0;padding:20px;background:#f8f9fa;border-radius:10px}
@@ -53,7 +54,7 @@
       </div>
     </header>
 
-    <!-- Nood-hulp-blok met anker -->
+    <!-- Nood-hulp-blok (met anker) -->
     <div id="hulp" class="emergency-box">
       <h2 id="h2emerg">🚨 Onmiddellike Hulp</h2>
       <p id="emergP1">As jy of iemand wat jy ken selfmoordgedagtes het:</p>
@@ -64,18 +65,40 @@
       <a id="visitSite" href="https://www.sadag.org" target="_blank" class="cta-button">Besoek SADAG Webwerf</a>
     </div>
 
-    <!-- Res van jou oorspronklike inhoud (kort weergawe hier) -->
+    <!-- ====== ALLE OORSPRONKLIKE INHOUD (VOLLEDIG) ====== -->
     <div class="section">
       <h2 id="h2understand">Verstaan Depressie</h2>
       <p id="understandP">Depressie is ’n mediese toestand, nie ’n teken van swakheid nie. Dit beïnvloed hoe jy voel, dink en optree. Maar die belangrikste is: <strong>depressie is behandelbaar</strong>.</p>
+      <h3 id="symptomsH3">Algemene simptome sluit in:</h3>
+      <ul class="tips-list">
+        <li id="sym1">Deurlopende hartseer of leë gevoel</li>
+        <li id="sym2">Verlies van belangstelling in aktiwiteite wat jy voorheen geniet het</li>
+        <li id="sym3">Veranderinge in eetlus of gewig</li>
+        <li id="sym4">Slaapprobleme of oorslaap</li>
+        <li id="sym5">Moeite met konsentrasie of besluitneming</li>
+        <li id="sym6">Gevoelens van wanhoop of waardeloosheid</li>
+      </ul>
     </div>
 
     <div class="section">
       <h2 id="h2tips">Wenke vir Hantering</h2>
+      <p id="tipsP">Terwyl professionele hulp die belangrikste is, kan hierdie strategieë help:</p>
       <div class="help-grid">
-        <div class="help-card"><h3>📞 Praat met Iemand</h3><p>Deel jou gevoelens met ’n vertroude vriend, familielid of berader.</p></div>
-        <div class="help-card"><h3>🚶‍♀️ Beweeg jou Liggaam</h3><p>Selfs ’n kort stappie daagliks kan help met chemikalieë in jou brein.</p></div>
-        <div class="help-card"><h3>🌱 Begin Klein</h3><p>Stel klein, bereikbare doelwitte – selfs om uit die bed te kom is ’n oorwinning.</p></div>
+        <div class="help-card"><h3 id="tip1H3">📞 Praat met Iemand</h3><p id="tip1P">Deel jou gevoelens met ’n vertroude vriend, familielid of berader. Jy hoef nie alleen deur hierdie te gaan nie.</p></div>
+        <div class="help-card"><h3 id="tip2H3">🚶‍♀️ Beweeg jou Liggaam</h3><p id="tip2P">Selfs ’n kort stappie daagliks kan help met chemikalieë in jou brein wat jou beter laat voel.</p></div>
+        <div class="help-card"><h3 id="tip3H3">🌱 Begin Klein</h3><p id="tip3P">Stel klein, bereikbare doelwitte. Selfs om uit die bed te kom is soms ’n oorwinning.</p></div>
+        <div class="help-card"><h3 id="tip4H3">📝 Skryf dit Neer</h3><p id="tip4P">Hou ’n joernaal van jou gedagtes en gevoelens. Dit kan help om patrone te identifiseer.</p></div>
+        <div class="help-card"><h3 id="tip5H3">⏰ Roetine Help</h3><p id="tip5P">Probeer ’n eenvoudige daaglikse roetine vestig. Struktuur kan troos bied in moeilike tye.</p></div>
+        <div class="help-card"><h3 id="tip6H3">🙏 Wees Gaaf vir Jouself</h3><p id="tip6P">Praat met jouself soos jy met ’n goeie vriend sou praat. Jy verdien liefde en begrip.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 id="h2resources">Hulpbronne in Suid-Afrika</h2>
+      <div class="help-grid">
+        <div class="help-card"><h3>SADAG</h3><p id="sadagP">Depressie & Angs Groep<br>📞 0800 567 567<br>🌐 www.sadag.org</p></div>
+        <div class="help-card"><h3>Lifeline</h3><p id="lifelineP">24/7 Berading<br>📞 0861 322 322<br>📧 help@lifeline.org.za</p></div>
+        <div class="help-card"><h3>SANCA</h3><p id="sancaP">📞 0861 435 722<br>Hulp met verslawing en geestesgesondheid</p></div>
       </div>
     </div>
 
@@ -83,13 +106,22 @@
       <p id="quoteP">"Daar is 'n lig aan die einde van die tonnel, selfs al kan jy dit nou nie sien nie. Hou aan stap, een tree op 'n slag."</p>
     </div>
 
+    <div class="section">
+      <h2 id="h2worth">Jy het die Moeite werd</h2>
+      <p id="worthP">Onthou, om hulp te vra is 'n teken van krag, nie swakheid nie. Jou lewe het waarde en betekenis, selfs al voel dit nou nie so nie. Daar is mense wat omgee en wil help.</p>
+      <div style="text-align:center;margin-top:20px">
+        <a id="callNow2" href="tel:0800567567" class="cta-button">Bel vir Hulp Nou</a>
+        <a id="visitSite2" href="https://www.sadag.org" target="_blank" class="cta-button">Besoek SADAG Webwerf</a>
+      </div>
+    </div>
+
     <footer>
-      <p><strong>Onthou:</strong> <span id="footerP2">Hierdie inligting is nie bedoel om professionele mediese advies te vervang nie.</span></p>
+      <p><strong>Onthou:</strong> <span id="footerP2">Hierdie inligting is nie bedoel om professionele mediese advies te vervang nie. Raadpleeg altyd ’n gekwalifiseerde gesondheidswerker vir persoonlike advies.</span></p>
       <p id="footerP3">© 2024 - Jou Lig van Hoop - Jy is nie alleen nie</p>
     </footer>
   </div>
 
-  <!-- Taal-switch JavaScript (kort weergawe) -->
+  <!-- Taal-switch JavaScript -->
   <script>
     const dict = {
       pageTitle: {af:"Jou Lig van Hoop", en:"Your Light of Hope"},
@@ -99,14 +131,44 @@
       emergP1: {af:"As jy of iemand wat jy ken selfmoordgedagtes het:", en:"If you or someone you know is having suicidal thoughts:"},
       emergP2: {af:"Of bel 10111 vir onmiddellike hulp", en:"Or call 10111 for immediate help"},
       callNow: {af:"Bel vir Hulp Nou", en:"Call for Help Now"},
+      callNow2: {af:"Bel vir Hulp Nou", en:"Call for Help Now"},
       visitSite: {af:"Besoek SADAG Webwerf", en:"Visit SADAG Website"},
+      visitSite2: {af:"Besoek SADAG Webwerf", en:"Visit SADAG Website"},
       h2understand: {af:"Verstaan Depressie", en:"Understanding Depression"},
       understandP: {af:"Depressie is ’n mediese toestand, nie ’n teken van swakheid nie. Dit beïnvloed hoe jy voel, dink en optree. Maar die belangrikste is: <strong>depressie is behandelbaar</strong>.",
                   en:"Depression is a medical condition, not a sign of weakness. It affects how you feel, think and behave. But most importantly: <strong>depression is treatable</strong>."},
+      symptomsH3: {af:"Algemene simptome sluit in:", en:"Common symptoms include:"},
+      sym1: {af:"Deurlopende hartseer of leë gevoel", en:"Persistent sadness or empty feeling"},
+      sym2: {af:"Verlies van belangstelling in aktiwiteite wat jy voorheen geniet het", en:"Loss of interest in activities you used to enjoy"},
+      sym3: {af:"Veranderinge in eetlus of gewig", en:"Changes in appetite or weight"},
+      sym4: {af:"Slaapprobleme of oorslaap", en:"Sleep problems or oversleeping"},
+      sym5: {af:"Moeite met konsentrasie of besluitneming", en:"Difficulty concentrating or making decisions"},
+      sym6: {af:"Gevoelens van wanhoop of waardeloosheid", en:"Feelings of hopelessness or worthlessness"},
       h2tips: {af:"Wenke vir Hantering", en:"Coping Tips"},
+      tipsP: {af:"Terwyl professionele hulp die belangrikste is, kan hierdie strategieë help:", en:"While professional help is most important, these strategies can help:"},
+      tip1H3: {af:"📞 Praat met Iemand", en:"📞 Talk to Someone"},
+      tip1P: {af:"Deel jou gevoelens met ’n vertroude vriend, familielid of berader. Jy hoef nie alleen deur hierdie te gaan nie.", en:"Share your feelings with a trusted friend, family member or counsellor. You don't have to go through this alone."},
+      tip2H3: {af:"🚶‍♀️ Beweeg jou Liggaam", en:"🚶‍♀️ Move Your Body"},
+      tip2P: {af:"Selfs ’n kort stappie daagliks kan help met chemikalieë in jou brein wat jou beter laat voel.", en:"Even a short daily walk can help with brain chemicals that make you feel better."},
+      tip3H3: {af:"🌱 Begin Klein", en:"🌱 Start Small"},
+      tip3P: {af:"Stel klein, bereikbare doelwitte. Selfs om uit die bed te kom is soms ’n oorwinning.", en:"Set small, achievable goals. Even getting out of bed is sometimes a victory."},
+      tip4H3: {af:"📝 Skryf dit Neer", en:"📝 Write it Down"},
+      tip4P: {af:"Hou ’n joernaal van jou gedagtes en gevoelens. Dit kan help om patrone te identifiseer.", en:"Keep a journal of your thoughts and feelings. It can help identify patterns."},
+      tip5H3: {af:"⏰ Roetine Help", en:"⏰ Routine Helps"},
+      tip5P: {af:"Probeer ’n eenvoudige daaglikse roetine vestig. Struktuur kan troos bied in moeilike tye.", en:"Try to establish a simple daily routine. Structure can provide comfort in difficult times."},
+      tip6H3: {af:"🙏 Wees Gaaf vir Jouself", en:"🙏 Be Kind to Yourself"},
+      tip6P: {af:"Praat met jouself soos jy met ’n goeie vriend sou praat. Jy verdien liefde en begrip.", en:"Talk to yourself as you would to a good friend. You deserve love and understanding."},
+      h2resources: {af:"Hulpbronne in Suid-Afrika", en:"Resources in South Africa"},
+      sadagP: {af:"Depressie & Angs Groep<br>📞 0800 567 567<br>🌐 www.sadag.org", en:"Depression & Anxiety Group<br>📞 0800 567 567<br>🌐 www.sadag.org"},
+      lifelineP: {af:"24/7 Berading<br>📞 0861 322 322<br>📧 help@lifeline.org.za", en:"24/7 Counselling<br>📞 0861 322 322<br>📧 help@lifeline.org.za"},
+      sancaP: {af:"📞 0861 435 722<br>Hulp met verslawing en geestesgesondheid", en:"📞 0861 435 722<br>Help with addiction and mental health"},
       quoteP: {af:"\"Daar is 'n lig aan die einde van die tonnel, selfs al kan jy dit nou nie sien nie. Hou aan stap, een tree op 'n slag.\"",
               en:"\"There is a light at the end of the tunnel, even if you can't see it now. Keep walking, one step at a time.\""},
-      footerP2: {af:"Hierdie inligting is nie bedoel om professionele mediese advies te vervang nie.", en:"This information is not intended to replace professional medical advice."},
+      h2worth: {af:"Jy het die Moeite werd", en:"You are Worth It"},
+      worthP: {af:"Onthou, om hulp te vra is 'n teken van krag, nie swakheid nie. Jou lewe het waarde en betekenis, selfs al voel dit nou nie so nie. Daar is mense wat omgee en wil help.",
+               en:"Remember, asking for help is a sign of strength, not weakness. Your life has value and meaning, even if it doesn't feel that way now. There are people who care and want to help."},
+      footerP2: {af:"Hierdie inligting is nie bedoel om professionele mediese advies te vervang nie. Raadpleeg altyd ’n gekwalifiseerde gesondheidswerker vir persoonlike advies.",
+                en:"This information is not intended to replace professional medical advice. Always consult a qualified health professional for personal advice."},
       footerP3: {af:"© 2024 - Jou Lig van Hoop - Jy is nie alleen nie", en:"© 2024 - Your Light of Hope - You are not alone"}
     };
 
