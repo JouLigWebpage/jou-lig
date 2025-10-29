@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <title data-key="pageTitle">Jou Hulp Gesprek – Hoe om te kommunikeer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.6;color:#333;background:linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);min-height:100vh}
+    .container{max-width:850px;margin:0 auto;padding:20px}
+    header{position:relative;text-align:center;padding:50px 20px 30px;background:rgba(255,255,255,.92);border-radius:15px;margin-bottom:30px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+    h1{color:#2c3e50;font-size:2.4em;margin-bottom:10px}
+    .subtitle{color:#7f8c8d;font-size:1.15em}
+    .lang-btn{position:absolute;top:15px;right:15px;background:#3498db;color:#fff;border:none;padding:8px 14px;border-radius:4px;cursor:pointer;font-size:.9rem}
+    .lang-btn:hover{background:#2980b9}
+    .section{background:rgba(255,255,255,.95);padding:30px;margin-bottom:20px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
+    h2{color:#3498db;margin-bottom:15px;font-size:1.8em}
+    ul.check,ul.cross{list-style:none;padding-left:0}
+    ul.check li,ul.cross li{margin:10px 0;padding-left:28px;position:relative}
+    ul.check li::before{content:'✔';color:#27ae60;position:absolute;left:0}
+    ul.cross li::before{content:'✘';color:#e74c3c;position:absolute;left:0}
+    .emergency-box{background:linear-gradient(135deg,#ff6b6b,#ee5a24);color:#fff;padding:25px;border-radius:10px;text-align:center;margin:20px 0}
+    .emergency-number{font-size:2em;font-weight:bold;margin:10px 0}
+    .cta-button{display:inline-block;background:#3498db;color:#fff;padding:12px 25px;text-decoration:none;border-radius:25px;margin:10px 5px;transition:background .3s}
+    .cta-button:hover{background:#2980b9}
+    footer{text-align:center;padding:20px;color:#7f8c8d;margin-top:40px}
+    @media(max-width:600px){h1{font-size:2em}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <button id="langToggle" class="lang-btn">English</button>
+      <h1 id="h1">Jou Hulp Gesprek</h1>
+      <p id="subtitle">Praktiese wenke om empaties met iemand te praat wat depressie of selfmoordgedagtes het</p>
+    </header>
+
+    <div class="section">
+      <h2 id="h2start">Hoe begin ek die gesprek?</h2>
+      <p id="startP">1. Kies ’n rustige, private plek.<br>2. Gebruik “ek”-stelling: <em>“Ek is bekommerd oor jou, want ek sien jy is nie jouself nie.”</em><br>3. Luister sonder om te oordeel – laat hulle praat sonder om raad te gee voor jy hul storie verstaan.</p>
+    </div>
+
+    <div class="section">
+      <h2 id="h2do">DOEN ✔</h2>
+      <ul class="check">
+        <li id="do1">Wees opreg en kalmerend: “Ek is hier vir jou.”</li>
+        <li id="do2">Valideer hul gevoelens: “Dit klink moeilik.”</li>
+        <li id="do3">Vra oop vrae: “Hoe kan ek jou die beste ondersteun?”</li>
+        <li id="do4">Moedig professionele hulp aan: “Het jy al met ’n berader gepraat? Ek kan saamgaan.”</li>
+        <li id="do5">Hou opvolg – bel of WhatsApp die volgende dag.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 id="h2dont">NIE DOEN ✘</h2>
+      <ul class="cross">
+        <li id="dont1">Moenie sê “Trek jouself saam” of “Ander het dit erger” nie.</li>
+        <li id="dont2">Moenie probeer oplos met drank, dwelms of godsdienstige skuld nie.</li>
+        <li id="dont3">Moenie belowe om geheime te hou as hulle selfmoordplanne noem nie – bel hulp.</li>
+        <li id="dont4">Moenie monopoliseer die gesprek nie; gee hulle ruimte.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 id="h2phone">Telefonies / WhatsApp wenke</h2>
+      <p id="phoneP">• Begin met toestemming: “Is dit okay as ek nou bel?”<br>• Gebruik sagte toon en kort sinne – wag vir antwoorde.<br>• As hulle huil, sê: “Dis okay om te huil, ek is hier.”<br>• Stuur later ’n stemnota eerder as net teks – menslike stem help meer.</p>
+    </div>
+
+    <div class="section">
+      <h2 id="h2professional">Hoe verwys ek professionele hulp?</h2>
+      <p id="profP">1. Noem spesifieke opsies: “SADAG het ’n gratis 24-uur lyn – 0800 567 567.”<br>2. Bied praktiese hulp: “Ek kan die nommer vir jou bel en op luidspreker sit.”<br>3. Normaliseer dit: “’n Berader is soos ’n dokter vir jou gevoelens – niks vreemds nie.”</p>
+    </div>
+
+    <div class="emergency-box">
+      <h2 id="h2emerg">🚨 Onmiddellike hulp</h2>
+      <p id="emergP">As hulle selfmoordplanne noem, moenie alleen reageer nie:</p>
+      <div class="emergency-number">0800 567 567</div>
+      <p>SADAG (24/7) – hou die lyn oop terwyl jy saam bel.</p>
+      <a id="callNow" href="tel:0800567567" class="cta-button">Bel saam nou</a>
+    </div>
+
+    <footer>
+      <p id="footerP"><strong>Onthou:</strong> Jy hoef nie ’n kenner te wees om te luister nie. Jou teenwoordigheid alleen alreeds help.</p>
+      <p id="footerP2">© 2024 Jou Hulp Gesprek – versprei hoop</p>
+    </footer>
+  </div>
+
+  <script>
+    const dict = {
+      pageTitle: {af:"Jou Hulp Gesprek – Hoe om te kommunikeer", en:"Your Help Conversation – How to communicate"},
+      h1: {af:"Jou Hulp Gesprek", en:"Your Help Conversation"},
+      subtitle: {af:"Praktiese wenke om empaties met iemand te praat wat depressie of selfmoordgedagtes het",
+                en:"Practical tips to talk empathetically to someone with depression or suicidal thoughts"},
+      h2start: {af:"Hoe begin ek die gesprek?", en:"How do I start the conversation?"},
+      startP: {af:"1. Kies ’n rustige, private plek.<br>2. Gebruik “ek”-stelling: <em>“Ek is bekommerd oor jou, want ek sien jy is nie jouself nie.”</em><br>3. Luister sonder om te oordeel – laat hulle praat sonder om raad te gee voor jy hul storie verstaan.",
+               en:"1. Choose a quiet, private place.<br>2. Use “I” statements: <em>“I’m worried about you, because I can see you’re not yourself.”</em><br>3. Listen without judgment – let them talk before you give advice."},
+      h2do: {af:"DOEN ✔", en:"DO ✔"},
+      do1: {af:"Wees opreg en kalmerend: “Ek is hier vir jou.”", en:"Be genuine and calming: “I’m here for you.”"},
+      do2: {af:"Valideer hul gevoelens: “Dit klink moeilik.”", en:"Validate their feelings: “That sounds tough.”"},
+      do3: {af:"Vra oop vrae: “Hoe kan ek jou die beste ondersteun?”", en:"Ask open questions: “How can I best support you?”"},
+      do4: {af:"Moedig professionele hulp aan: “Het jy al met ’n berader gepraat? Ek kan saamgaan.”", en:"Encourage professional help: “Have you spoken to a counsellor? I can come with you.”"},
+      do5: {af:"Hou opvolg – bel of WhatsApp die volgende dag.", en:"Follow up – call or WhatsApp the next day."},
+      h2dont: {af:"NIE DOEN ✘", en:"DON’T DO ✘"},
+      dont1: {af:"Moenie sê “Trek jouself saam” of “Ander het dit erger” nie.", en:"Don’t say “Pull yourself together” or “Others have it worse”."},
+      dont2: {af:"Moenie probeer oplos met drank, dwelms of godsdienstige skuld nie.", en:"Don’t try to solve with alcohol, drugs or religious guilt."},
+      dont3: {af:"Moenie belowe om geheime te hou as hulle selfmoordplanne noem nie – bel hulp.", en:"Don’t promise to keep secrets if they mention suicide plans – call for help."},
+      dont4: {af:"Moenie monopoliseer die gesprek nie; gee hulle ruimte.", en:"Don’t monopolise the conversation; give them space."},
+      h2phone: {af:"Telefonies / WhatsApp wenke", en:"Phone / WhatsApp tips"},
+      phoneP: {af:"• Begin met toestemming: “Is dit okay as ek nou bel?”<br>• Gebruik sagte toon en kort sinne – wag vir antwoorde.<br>• As hulle huil, sê: “Dis okay om te huil, ek is hier.”<br>• Stuur later ’n stemnota eerder as net teks – menslike stem help meer.",
+              en:"• Start with permission: “Is it okay if I call now?”<br>• Use a soft tone and short sentences – wait for answers.<br>• If they cry, say: “It’s okay to cry, I’m here.”<br>• Send a voice note later instead of only text – human voice helps more."},
+      h2professional: {af:"Hoe verwys ek professionele hulp?", en:"How do I refer professional help?"},
+      profP: {af:"1. Noem spesifieke opsies: “SADAG het ’n gratis 24-uur lyn – 0800 567 567.”<br>2. Bied praktiese hulp: “Ek kan die nommer vir jou bel en op luidspreker sit.”<br>3. Normaliseer dit: “’n Berader is soos ’n dokter vir jou gevoelens – niks vreemds nie.”",
+             en:"1. Mention specific options: “SADAG has a free 24-hour line – 0800 567 567.”<br>2. Offer practical help: “I can dial the number for you and put it on speaker.”<br>3. Normalize it: “A counsellor is like a doctor for your feelings – nothing strange.”"},
+      h2emerg: {af:"🚨 Onmiddellike hulp", en:"🚨 Immediate help"},
+      emergP: {af:"As hulle selfmoordplanne noem, moenie alleen reageer nie:", en:"If they mention suicide plans, don’t respond alone:"},
+      callNow: {af:"Bel saam nou", en:"Call together now"},
+      footerP: {af:"Jy hoef nie ’n kenner te wees om te luister nie. Jou teenwoordigheid alleen alreeds help.",
+               en:"You don’t have to be an expert to listen. Your presence already helps."},
+      footerP2: {af:"© 2024 Jou Hulp Gesprek – versprei hoop", en:"© 2024 Your Help Conversation – spread hope"}
+    };
+
+    const langToggle = document.getElementById('langToggle');
+    let currentLang = 'af';
+
+    function setLanguage(lang){
+      Object.keys(dict).forEach(k=>{
+        const el=document.getElementById(k);
+        if(el) el.innerHTML=dict[k][lang];
+      });
+      langToggle.textContent=lang==='af'?'English':'Afrikaans';
+      document.documentElement.lang=lang;
+    }
+
+    setLanguage(currentLang);
+    langToggle.addEventListener('click',()=>{
+      currentLang=currentLang==='af'?'en':'af';
+      setLanguage(currentLang);
+    });
+  </script>
+</body>
+</html>
