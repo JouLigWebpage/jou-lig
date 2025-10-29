@@ -1,0 +1,300 @@
+<html lang="af">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jou Lig - Ondersteuning vir Depressie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .help-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .help-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+
+        .help-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .help-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .emergency-box {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .emergency-box h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .emergency-number {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .tips-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .tips-list li {
+            background: #ecf0f1;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+        }
+
+        .quote {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #2980b9;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .help-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jou Lig van Hoop</h1>
+            <p class="subtitle">Jy is nie alleen nie - Daar is altyd hulp en hoop</p>
+        </header>
+
+        <div class="emergency-box">
+            <h2>🚨 Onmiddellike Hulp</h2>
+            <p>As jy of iemand wat jy ken selfmoordgedagtes het:</p>
+            <div class="emergency-number">0800 567 567</div>
+            <p>Suid-Afrikaanse Depressie en Angs Groep (24/7)</p>
+            <p><strong>Of bel 10111 vir onmiddellike hulp</strong></p>
+        </div>
+
+        <div class="section">
+            <h2>Verstaan Depressie</h2>
+            <p>Depressie is 'n mediese toestand, nie 'n teken van swakheid nie. Dit beïnvloed hoe jy voel, dink en optree. Maar die belangrikste is: <strong>depressie is behandelbaar</strong>.</p>
+            
+            <h3>Algemene simptome sluit in:</h3>
+            <ul class="tips-list">
+                <li>Deurlopende hartseer of leë gevoel</li>
+                <li>Verlies van belangstelling in aktiwiteite wat jy voorheen geniet het</li>
+                <li>Veranderinge in eetlus of gewig</li>
+                <li>Slaapprobleme of oorslaap</li>
+                <li>Moeite met konsentrasie of besluitneming</li>
+                <li>Gevoelens van wanhoop of waardeloosheid</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Wenke vir Hantering</h2>
+            <p>Terwyl professionele hulp die belangrikste is, kan hierdie strategieë help:</p>
+            
+            <div class="help-grid">
+                <div class="help-card">
+                    <h3>📞 Praat met Iemand</h3>
+                    <p>Deel jou gevoelens met 'n vertroude vriend, familielid of berader. Jy hoef nie alleen deur hierdie te gaan nie.</p>
+                </div>
+                
+                <div class="help-card">
+                    <h3>🚶‍♀️ Beweeg jou Liggaam</h3>
+                    <p>Selfs 'n kort stappie daagliks kan help met chemikalieë in jou brein wat jou beter laat voel.</p>
+                </div>
+                
+                <div class="help-card">
+                    <h3>🌱 Begin Klein</h3>
+                    <p>Stel klein, bereikbare doelwitte. Selfs om uit die bed te kom is soms 'n oorwinning.</p>
+                </div>
+                
+                <div class="help-card">
+                    <h3>📝 Skryf dit Neer</h3>
+                    <p>Hou 'n joernaal van jou gedagtes en gevoelens. Dit kan help om patrone te identifiseer.</p>
+                </div>
+                
+                <div class="help-card">
+                    <h3>⏰ Roetine Help</h3>
+                    <p>Probeer 'n eenvoudige daaglikse roetine vestig. Struktuur kan troos bied in moeilike tye.</p>
+                </div>
+                
+                <div class="help-card">
+                    <h3>🙏 Wees Gaaf vir Jouself</h3>
+                    <p>Praat met jouself soos jy met 'n goeie vriend sou praat. Jy verdien liefde en begrip.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Hulpbronne in Suid-Afrika</h2>
+            <div class="help-grid">
+                <div class="help-card">
+                    <h3>SADAG</h3>
+                    <p>Depressie & Angs Groep<br>
+                    📞 0800 567 567<br>
+                    🌐 www.sadag.org</p>
+                </div>
+                
+                <div class="help-card">
+                    <h3>Leefstyl Helpline</h3>
+                    <p>24/7 Berading<br>
+                    📞 0861 322 322<br>
+                    📧 help@lifeline.org.za</p>
+                </div>
+                
+                <div class="help-card">
+                    <h3>SA Nasionale Council on Alcoholism</h3>
+                    <p>📞 0861 435 722<br>
+                    Hulp met verslawing en geestesgesondheid</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote">
+            "Daar is 'n lig aan die einde van die tonnel, selfs al kan jy dit nou nie sien nie. Hou aan stap, een tree op 'n slag."
+        </div>
+
+        <div class="section">
+            <h2>Jy het die Moeite werd</h2>
+            <p>Onthou, om hulp te vra is 'n teken van krag, nie swakheid nie. Jou lewe het waarde en betekenis, selfs al voel dit nou nie so nie. Daar is mense wat omgee en wil help.</p>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="tel:0800567567" class="cta-button">Bel vir Hulp Nou</a>
+                <a href="https://www.sadag.org" target="_blank" class="cta-button">Besoek SADAG Webwerf</a>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>Onthou:</strong> Hierdie inligting is nie bedoel om professionele mediese advies te vervang nie. 
+            Raadpleeg altyd 'n gekwalifiseerde gesondheidswerker vir persoonlike advies.</p>
+            <p>© 2024 - Jou Lig van Hoop - Jy is nie alleen nie</p>
+        </footer>
+    </div>
+
+    <script>
+        // Eenvoudige JavaScript vir interaktiwiteit
+        document.addEventListener('DOMContentLoaded', function() {
+            // Voeg 'n boodskap toe wanneer iemand op die noodnommer klik
+            const emergencyNumbers = document.querySelectorAll('.emergency-number');
+            emergencyNumbers.forEach(number => {
+                number.addEventListener('click', function() {
+                    alert('Jy is op die punt om te bel vir hulp. Jy is dapper en verdien ondersteuning.');
+                });
+            });
+
+            // Animasie vir hulp kaarte
+            const helpCards = document.querySelectorAll('.help-card');
+            helpCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
